@@ -209,6 +209,10 @@ main {
   width: 100%;
 }
 
+#main-centered {
+  padding: 8px 10px 0;
+}
+
 .center-align {
   position: relative;
 }
@@ -223,4 +227,75 @@ main {
   margin-top: -9px;
   color: #00ab33;
   font-size: 16px;
+}
+#main-ad {
+  display: inline-block;
+  width: 740px;
+  height: 120px;
+  background: #555;
+}
+
+#main-login {
+  display: inline-block;
+  width: 332px;
+  height: 120px;
+  vertical-align: top;
+  background-color: white;
+}
+
+#main-ytn {
+  display: inline-block;
+  width: 740px;
+  height: 46px;
+  background-color: white;
+}
+
+#main-newstand {
+  display: inline-block;
+  width: 740px;
+  height: 246px;
+  background-color: white;
+}
+
+#main-weather {
+  display: inline-block;
+  width: 332px;
+  height: 142px;
+  background-color: white;
+}
+
+#main-second-ad {
+  display: inline-block;
+  width: 332px;
+  height: 150px;
+  background: #555;
+}
+
+#main-category {
+  display: inline-block;
+  width: 740px;
+  height: 837px;
+  background: white;
+}
+
+#main-shopping {
+  display: inline-block;
+  width: 332px;
+  height: 837px;
+  background: #555;
+}
+
+#main-event {
+  display: inline-block;
+  width: 740px;
+  height: 130px;
+  background: white;
+  vertical-align: top;
+}
+
+#main-third-ad {
+  display: inline-block;
+  width: 332px;
+  height: 130px;
+  background: #555;
 }
