@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
 /*선택자(selector): html 태그를 선택하는 애들*/
 /*Cascading Style Sheet*/
 .blind {
@@ -16,6 +20,28 @@
 .center-align {
   margin: 0 auto;
   width: 1080px;
+}
+
+header {
+  height: 170px;
+}
+
+#header-top {
+  float: right;
+  margin-top: 8px;
+}
+
+#header-top span {
+  color: #888;
+  height: 21px;
+  letter-spacing: -1px;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+#header-search {
+  padding-top: 23px;
+  clear: both;
 }
 
 /*header-search의 자식 h1, div 지워서 쳐도 됨.*/
@@ -57,7 +83,7 @@
 }
 
 #header-search fieldset {
-  margin-left: 20px;
+  margin-left: 18px;
   /*adding-top: 12px;
   padding-left: 10px;
   padding-bottom: 12px;
@@ -95,9 +121,38 @@
   top: 0;
 }
 
+#search-keyboard {
+  background-image: url(./sp_main_4f8ccb.png)
+  background-repeat: no-repeat;
+  background-position: -33px -60px;
+  width: 19px;
+  height: 11px;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+#search-history {
+  background-image: url(./sp_main_4f8ccb.png)
+  background-repeat: no-repeat;
+  background-position: -87px -60px;
+  width: 19px;
+  height: 4px;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+nav {
+  display: inline-block
+  height: 46px;
+  border-top: 1px solid #f1f3f6;
+  border-bottom: 1px solid #d1d8e4;
+}
+
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0 4px;
   list-style: none;
 }
 
@@ -139,3 +194,33 @@ nav li:nth-child(5) span:first-child {
   background-position: -70px -285px;
 }
 /*css 우선순위: 기본적으로 뒤에 나오는 것이 높음. important inline id class tag 순.*/
+
+.nav-divider {
+  display: inline-block
+  margin: 18px 16px 0;
+  width: 1px;
+  height: 14px;
+  background: #ebeef3;
+}
+
+main {
+  background-color: #f2f4f7;
+  display: inline-block;
+  width: 100%;
+}
+
+.center-align {
+  position: relative;
+}
+
+#search-ranking {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+}
+
+#rank-number {
+  margin-top: -9px;
+  color: #00ab33;
+  font-size: 16px;
+}
