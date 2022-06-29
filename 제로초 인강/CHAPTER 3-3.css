@@ -13,7 +13,7 @@
   height: 1px;
 }
 
-div#header-center {
+.center-align {
   margin: 0 auto;
   width: 1080px;
 }
@@ -25,9 +25,9 @@ div#header-center {
   height: 80px;
   display: inline-block;
   background-image: url(./sp_main_4f8ccb.png);
-  background-position: 0 -219px;
+  background-position: 0 -215px;
   background-repeat: no-repeat;
-  background-size: 520px 607px;
+  background-size: 520px 599px;
   vertical-align: middle;
 }
 
@@ -58,20 +58,84 @@ div#header-center {
 
 #header-search fieldset {
   margin-left: 20px;
-  padding-top: 12px;
+  /*adding-top: 12px;
   padding-left: 10px;
   padding-bottom: 12px;
-  padding-right: 10px;
-  /*padding: 12px 0 12px 10px;*/
+  padding-right: 10px;*/
+  padding: 12px 0 12px 10px;
   width: 521px;
-  height: 49;
+  height: 50;
   display: inline-block;
   border: 2px solid #03cf5d;
   vertical-align: middle;
+  position: relative;
 }
 
 #header-search fieldset input {
   border: none;
   padding: 0;
   outline: none;
+  width: 405px;
+  height: 23px;
+  display: inline-block;
 }
+
+#header-search fieldset button {
+  width: 49px;
+  height: 49px;
+  border: none;
+  padding: 0;
+  background: #03cf5d;
+  background-image: url(./sp_main_4f8ccb.png);
+  background-position: -728px 5px;
+  background-repeat: no-repeat;
+  background-size: 800px 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li:first-child span.nav-item-mail {
+  width: 25px;
+  background-position: 0 -285px;
+  margin-left: 0;
+}
+
+nav li span:first-child {
+  height: 16px;
+  display: inline-block;
+  background-image: url(./sp_main_4f8ccb.png);
+  background-repeat: no-repeat;
+  margin-left: 14px;
+}
+
+nav li:nth-child(2) span:first-child {
+  width: 27px;
+  background-position: -279 -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+  width: 40px;
+  background-position: -279 -52px;
+}
+
+nav li:nth-child(4) span:first-child {
+  width: 26px;
+  background-position: -70px -285px;
+}
+
+nav li:nth-child(5) span:first-child {
+  width: 26px;
+  background-position: -70px -285px;
+}
+/*css 우선순위: 기본적으로 뒤에 나오는 것이 높음. important inline id class tag 순.*/
