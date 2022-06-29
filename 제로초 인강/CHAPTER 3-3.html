@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./CHAPTER 3-3.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-center">
+        <!--속성명: 속성값, 속성 간 구분은 ; 으로 구분함.-->
+        <!--css파일을 만들지 않고 html 안에 만드는 것 인라인 스타일이라고 함. but 권장하지는 X.-->
+        <!--구역자체가 가운데 정렬인 것인지 아닌지 제대로 인지!-->
+        <span>네이버를 시작페이지로</span>
+        <span>쥬니어네이버</span>
+        <span>해피빈</span>
+        <div id="header-search">
+          <h1>
+            <a href="https://www.naver.com">
+              <span>네이버</span>
+            </a>
+            <!--태그만으로 설명이 안 되는 부분은 attributes라는 속성을 통해 부가정보 제공-->
+          </h1>
+          <h2 class="blind">검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <!--legend:범례-->
+            <input />
+            <button class="blind">검색</button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <!--unordered list-->
+        <li>메일</li>
+        <!--list item-->
+        <li>카페</li>
+        <li>블로그</li>
+        <li>지식iN</li>
+        <li>쇼핑</li>
+        <li>네이버페이</li>
+      </ul>
+    </nav>
+    <!--메뉴 나열된 곳을 navigator nav-->
+    <main>
+      <h2>실시간 검색어</h2>
+      <h3>연합뉴스</h3>
+      <ol>
+        <!--ordered list-->
+        <li>충격) 숙제 8시간 반</li>
+        <li>속보) 언제 다 들어</li>
+      </ol>
+      <h3>언론사 목록</h3>
+      <ul>
+        <li><img src="./005.png" alt="국민일보" /></li>
+        <li><img src="./013.png" alt="연합인포맥스" /></li>
+        <!--alt: 설명, 시각장애인 스크린 리더로 읽을 때 소스는 못 보지만 alt로 이미지에 대한 설명-->
+      </ul>
+      <h3>로그인</h3>
+      <h3>뉴스</h3>
+      <h3>법률</h3>
+      <h3>쇼핑</h3>
+    </main>
+    <footer>
+      <!--부가적인 정보는 footer1-->
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
+</html>
+<!--가로를 먼저 나누고 이후에 세로로 나누라. div=division: 구역들을 나누는 태그-->
+<!--가운데 정렬될 컨텐츠를 먼저 묶어주어라.-->
+<!--block은 전제 공간 차지, inline은 컨텐츠 부분만, inline-block은 높이, 너비 지정해줄 수 있음. span태그는 자동으로 inline 적용-->
