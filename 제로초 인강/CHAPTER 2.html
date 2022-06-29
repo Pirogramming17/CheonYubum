@@ -12,17 +12,22 @@
         <!--속성명: 속성값, 속성 간 구분은 ; 으로 구분함.-->
         <!--css파일을 만들지 않고 html 안에 만드는 것 인라인 스타일이라고 함. but 권장하지는 X.-->
         <!--구역자체가 가운데 정렬인 것인지 아닌지 제대로 인지!-->
-        <h1>
-          <a href="https://www.naver.com">네이버</a>
-          <!--태그만으로 설명이 안 되는 부분은 attributes라는 속성을 통해 부가정보 제공-->
-        </h1>
-        <h2>검색창</h2>
-        <fieldset>
-          <legend>검색</legend>
-          <!--legend:범례-->
-          <input />
-          <button>검색</button>
-        </fieldset>
+        <span>네이버를 시작페이지로</span>
+        <span>쥬니어네이버</span>
+        <span>해피빈</span>
+        <div id="header-search">
+          <h1>
+            <a href="https://www.naver.com">네이버</a>
+            <!--태그만으로 설명이 안 되는 부분은 attributes라는 속성을 통해 부가정보 제공-->
+          </h1>
+          <h2>검색창</h2>
+          <fieldset>
+            <legend>검색</legend>
+            <!--legend:범례-->
+            <input />
+            <button>검색</button>
+          </fieldset>
+        </div>
       </div>
     </header>
     <nav>
@@ -67,3 +72,4 @@
 </html>
 <!--가로를 먼저 나누고 이후에 세로로 나누라. div=division: 구역들을 나누는 태그-->
 <!--가운데 정렬될 컨텐츠를 먼저 묶어주어라.-->
+<!--block은 전제 공간 차지, inline은 컨텐츠 부분만, inline-block은 높이, 너비 지정해줄 수 있음. span태그는 자동으로 inline 적용-->

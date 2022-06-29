@@ -1,6 +1,28 @@
 /*선택자(selector): html 태그를 선택하는 애들*/
+/*Cascading Style Sheet*/
 
 div#header-center {
   margin: 0 auto;
   width: 1080px;
+}
+
+/*header-search의 자식 h1, div 지워서 쳐도 됨.*/
+#header-search > h1 {
+  width: 280px;
+  display: inline-block;
+}
+
+/*
+#header-center h1 {
+    자손 선택자
+}
+*/
+
+#header-search h2 {
+  display: none;
+}
+
+#header-search fieldset {
+  width: 520px;
+  display: inline-block;
 }
