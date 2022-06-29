@@ -1,0 +1,6 @@
+/*선택자(selector): html 태그를 선택하는 애들*/
+
+div#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
