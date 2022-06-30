@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>네이버</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./CHAPTER 3-3.css" />
+  </head>
+  <body>
+    <header>
+      <div class="center-align">
+        <!--속성명: 속성값, 속성 간 구분은 ; 으로 구분함.-->
+        <!--css파일을 만들지 않고 html 안에 만드는 것 인라인 스타일이라고 함. but 권장하지는 X.-->
+        <!--구역자체가 가운데 정렬인 것인지 아닌지 제대로 인지!-->
+        <div id="header-top">
+          <span>네이버를 시작페이지로 > |</span>
+          <span>쥬니어네이버 |</span>
+          <span>해피빈</span>
+        </div>
+        <div id="header-search">
+          <h1>
+            <a href="https://www.naver.com">
+              <span>네이버</span>
+            </a>
+            <!--태그만으로 설명이 안 되는 부분은 attributes라는 속성을 통해 부가정보 제공-->
+          </h1>
+          <h2 class="blind">검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <!--legend:범례-->
+            <input />
+            <span id="search-keyboard"></span>
+            <span id="search-history"></span>
+            <button>
+              <span class="blind">검색</span>
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="center-align relative">
+        <div id="search-ranking">
+          <h2 class="blind">실시간 검색어</h2>
+          <div>
+            <span id="rank-number">1</span>
+            <span id="rank-title">천유범 숨쉰채 발견</span>
+          </div>
+            <ul>
+            <li>
+              <span class="rank-number">1</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">2</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">3</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">4</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">5</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">6</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">7</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">8</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">9</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+            <li>
+              <span class="rank-number">10</span>
+              <span class="rank-title">천유범 숨쉰채 발견</span>
+            </li>
+          </ul>
+        </div>
+        <ul id="nav-menu">
+          <!--unordered list-->
+          <li>
+            <a href="">
+              <span class="nav-item-mail"></span>
+              <span class="blind">메일</span>
+            </a>
+          </li>
+          <!--list item-->
+          <li>
+            <a href=""><span></span><span class="blind">카페</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">블로그</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지식인</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">쇼핑</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버페이</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버쇼핑</span></a>
+          </li>
+        </ul>
+        <div class="nav-divider"></div>
+      </div>
+    </nav>
+    <!--메뉴 나열된 곳을 navigator nav-->
+    <main>
+      <div id="main-centered" class="center-align">
+        <div id="main-first-block">
+          <div id="main-ad"></div>
+          <div id="main-login">
+            <h3 class="blind">로그인</h3>
+            <div class="login-wrapper">
+              <span>네이버를 더 안전하고 편리하게 이용하세요.</span>
+              <a href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https%3A%2F%2Fwww.naver.com">NAVER 로그인</a>
+            </div>
+          </div>
+        </div>
+        <div id="main-second-block">
+          <div class="float-left">
+            <div id="main-ytn">
+              <h3>연합뉴스</h3>
+              <ol>
+                <!--ordered list-->
+                <li>충격) 숙제 8시간 반</li>
+              </ol>
+            </div>
+            <div id="main-newstand">
+              <h3>언론사 목록</h3>
+              <ul>
+                <li><img src="./005.png" alt="국민일보" /></li>
+                <li><img src="./013.png" alt="연합인포맥스" /></li>
+                <!--alt: 설명, 시각장애인 스크린 리더로 읽을 때 소스는 못 보지만 alt로 이미지에 대한 설명-->
+              </ul>
+            </div>
+          </div>
+          <div class="float-left">
+            <div id="main-weather"></div>
+            <div id="main-second-ad"></div>
+          </div>
+        </div>
+        <div id="main-third-block">
+          <div id="main-category">
+            <h3>주제별 보기</h3>
+            <div id="main-category-top">
+              <button id="subject-all">
+                <span class="blind">전체 주제 열기</span>
+                <span></span>
+              </button>
+              <div id="subject-list"></div>
+              <button id="subject-prev">
+                <span class="blind">이전 주제</span>
+                <span></span>
+              </button>
+              <button id="subject-next">
+                <span class="blind">다음 주제</span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <div id="main-shopping">
+            <iframe 
+              src="https://www.naver.com/shoppingbox/shoppingboxnew/main.nhn?mode=plusdeal&domain=N" 
+              frameborder="0" 
+              scrolling="no"
+            />
+          </div>
+        </div>
+        <div id="main-fourth-block">
+          <div id="main-event">
+            <h3>이벤트</h3>
+          <div id=""main-third-ad></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!--부가적인 정보는 footer1-->
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
+</html>
+<!--가로를 먼저 나누고 이후에 세로로 나누라. div=division: 구역들을 나누는 태그-->
+<!--가운데 정렬될 컨텐츠를 먼저 묶어주어라.-->
+<!--block은 전제 공간 차지, inline은 컨텐츠 부분만, inline-block은 높이, 너비 지정해줄 수 있음. span태그는 자동으로 inline 적용-->
