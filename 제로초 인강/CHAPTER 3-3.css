@@ -284,6 +284,16 @@ main {
   margin-bottom: 8px;
 }
 
+#main-login .login-wrapper {
+  padding: 15px 25px;
+
+}
+
+#main-login .login-wrapper a {
+  display:block
+  margin-top: 12px;
+}
+
 #main-second-block .float-left:first-child {
   width: 740px;
   margin-right: 8px;
