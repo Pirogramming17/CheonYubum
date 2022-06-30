@@ -304,6 +304,13 @@ main {
   vertical-align: top;
 }
 
+#main-ytn h3, #main-newstand h3 {
+  font-size: 14px;
+  font-family: NanumSquare, Dotum, "돋움", Helvetica, Apple Goetic
+  padding-top: 15px;
+  padding-left: 45px
+}
+
 #main-ytn {
   float: left;
   width: 740px;
@@ -418,3 +425,59 @@ main {
   height: 130px;
   background: #555;
 }
+
+#main-category-top {
+  display: inline-block;
+  width: 100%;
+
+}
+
+#subject-list, #subject-all, #subject-prev, #subject-next {
+  flot: left;
+}
+
+#subject-list {
+  width: 603px;
+}
+
+#subject-all, #subject-prev, #subject-next {
+  position: relative;
+  width: 45px;
+  border: none;
+  border-left: 1px solid #ebeef3;
+  background: white;
+}
+
+#subject-all span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 20px;
+  height: 14px;
+  background-position: -218px -257px;
+  background-image: url(./sp_main_4f8ccb.png);
+  background-repeat: no-repeat;
+}
+
+#subject-prev span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-position: -320px 0px;
+  background-image: url(./sp_main_4f8ccb.png);
+  background-repeat: no-repeat;
+}
+
+#subject-next span:last-child{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-position: -320px -52px;
+  background-image: url(./sp_main_4f8ccb.png);
+  background-repeat: no-repeat;
+}
+
