@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.Background_Container {
+  width: 1440px;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+}
+
+header {
+  background: #2b3137;
+  padding: 15px 0 5px 0;
+  height: auto;
+}
+
+header .Background_Container {
+  height: 50px;
+}
+
+header .Menu_list {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+header .Menu_list ul {
+  display: flex;
+  list-style: none;
+}
+
+header .Menu_list ul li {
+  margin: auto 10px;
+}
+
+header .Menu_list ul li .logo {
+  font-size: 35px;
+}
+
+header .Menu_list ul li i {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+header .Input_Search {
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+header .Input_Search input {
+  background-color: #464b50;
+  font-size: 16px;
+  height: 35px;
+  width: 235px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+header .Input_Search input::placeholder {
+  color: lightgray;
+}
+
+header .Input_Search button {
+  background-color: transparent;
+  border: none;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+header .Input_Search #sign-up {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+main {
+  background: #2b3137;
+}
+
+main .main {
+  display: flex;
+}
+
+main .title {
+  width: 50%;
+  margin: auto 5px auto 80px;
+  padding: 10px 60px 60px;
+}
+
+main .title .one-title {
+  text-align: left;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0 0 15px;
+}
+
+main .title .two-title {
+  color: #9e9d9d;
+  font-size: 21px;
+  line-height: 1.3em;
+}
+
+main .title .two-title span {
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #747373;
+}
+
+main .info {
+  width: 50%;
+}
+
+main .Info_ form {
+  color: black;
+  background: white;
+  margin: 0 80px 60px 35px;
+  padding: 25px 20px;
+  width: 410px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+footer .Background_Container {
+  height: 140px;
+}
+
+footer .git {
+  width: 400px;
+  height: 173px;
+  margin: 0 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
