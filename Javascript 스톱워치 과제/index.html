@@ -4,7 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container__sw">
+      <span class="title__sw">피로그래밍 스톱워치</span>
+      <div class="timebox__container">
+        <div class="timebox"><p id="stopwatch">00:00</p></div>
+        <div class="btn__container">
+          <a href="" class="start__btn btn__content" onclick="StartWatch"
+            ><span class="btn__text">start</span></a
+          >
+          <a href="" class="stop__btn btn__content" onclick="Stopwatch"
+            ><span class="btn__text">stop</span></a
+          >
+          <a href="" class="reset__btn btn__content" onclick="ResetWatch"
+            ><span class="btn__text">reset</span></a
+          >
+        </div>
+      </div>
+      <div class="record__container">
+        <div class="record__header">
+          <input type="checkbox" id="check__btn" />
+          <span class="record__header__text">구간 기록</span>
+          <div><button id="trash__btn"></button></div>
+        </div>
+        <div class="record__container"><span class="time__record"></span></div>
+      </div>
+    </div>
+    <script>
+      const Stopwatch = document.querySelector("#stopwatch");
+      const StartBtn = document.querySelector(".start__btn");
+      const StopBtn = document.querySelector(".stop__btn");
+      const ResetBtn = document.querySelector(".reset__btn");
+      const CheckBtn = document.querySelector("#check__btn");
+      const TrashBtn = document.querySelector("#trash__btn");
+      let time = 0;
+
+      function StartWatch() {
+        time++;
+        sec = String(parseInt(time / 100));
+        msec = String(time % 100);
+        Stopwatch.textContent = `${sec}:${msec}`;
+        timer = setTimeout(startClock, 10);
+      }
+
+      function Stopwatch() {
+        clearTimeout(timer);
+      }
+
+      function ResetWatch() {
+        time = 0;
+        clearTimeout(timer);
+        Stopwatch.textContent = "00:00";
+      }
+
+      StartBtn.addEventListener("click", StartWatch);
+      StopBtn.addEventListener("click", Stopwatch);
+      ResetBtn.addEventListener("click", ResetWatch);
+    </script>
+  </body>
 </html>
