@@ -10,3 +10,7 @@ while True:
             print('1,2,3 중 하나를 입력하세요')
         else:
             break
+
+for i in range(x):
+    num += 1
+    print('Player : ', num)
