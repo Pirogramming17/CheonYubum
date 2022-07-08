@@ -15,5 +15,9 @@ while True:
               num += 1
               if time % 2 != 0:
                 print('Player A: ', num)
+                if num == 31:
+                  break
               else:
                 print('Player B: ', num)
+                if num == 31:
+                  break
