@@ -1,21 +1,29 @@
 {% extends 'blog/base.html' %} {% block content %}
 <form action="/post/new/{{post.id}}" method="post">
   {% csrf_token %}
-  <div>
-    <div class="create-title"></div>
+  <div class="new-post">
+    <div class="create-title"><span>Movie&nbsp;</span>review 🍿</div>
     <div class="create-menu">
       <div><input type="text" name="title" placeholder="제목" /></div>
       <div><input type="datetime" name="comeout" placeholder="개봉연도" /></div>
       <div><input type="text" name="genre" placeholder="#GENRE" /></div>
       <div><input type="number" name="score" placeholder="평점" /></div>
       <div><input type="text" name="runnintime" placeholder="러닝타임" /></div>
-      <div><textarea name="review" id="" cols="30" rows="10"></textarea></div>
+      <div>
+        <textarea
+          name="review"
+          id=""
+          cols="56"
+          rows="10"
+          placeholder="REVIEW"
+        ></textarea>
+      </div>
       <div><input type="text" name="direct" placeholder="감독" /></div>
       <div><input type="text" name="maincha" placeholder="주연" /></div>
+      <div class="save-btn">
+        <input type="submit" value="Save" />
+      </div>
     </div>
-  </div>
-  <div>
-    <input type="submit" value="SAVE" />
   </div>
 </form>
 {% endblock %}
