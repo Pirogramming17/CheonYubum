@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %} {% block content %} {% for post in posts %}
+<div class="listpage">
+  <article>
+    <a href="{% url 'detail' id=post.id %}">
+      <h2>{{post.title}}</h2>
+      <div class="comeout">개봉년도 {{post.comeout | date:'Y'}}</div>
+      <div class="genre">장르 {{post.genre}}</div>
+      <div>평점 {{post.score}}/10</div>
+    </a>
+  </article>
+</div>
+{% endfor %} {% endblock %}

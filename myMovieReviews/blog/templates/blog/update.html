@@ -1,0 +1,75 @@
+{% extends 'blog/base.html' %} {% block content %}
+<form action="/update/{{post.id}}" method="post">
+  {% csrf_token %}
+  <div>
+    <div class="create-title"></div>
+    <div class="create-menu">
+      <div>
+        <input
+          type="text"
+          name="title"
+          placeholder="제목"
+          value="{{post.title}}"
+        />
+      </div>
+      <div>
+        <input
+          type="datetime"
+          name="comeout"
+          placeholder="개봉연도"
+          value="{{post.comeout}}"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="genre"
+          placeholder="#GENRE"
+          value="{{post.genre}}"
+        />
+      </div>
+      <div>
+        <input
+          type="number"
+          name="score"
+          placeholder="평점"
+          value="{{post.score}}"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="runnintime"
+          placeholder="러닝타임"
+          value="{{post.runnintime}}"
+        />
+      </div>
+      <div>
+        <textarea name="review" id="" cols="30" rows="10">
+{{post.review}}</textarea
+        >
+      </div>
+      <div>
+        <input
+          type="text"
+          name="direct"
+          placeholder="감독"
+          value="{{post.direct}}"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="maincha"
+          placeholder="주연"
+          value="{{post.maincha}}"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <input type="submit" value="SAVE" />
+  </div>
+</form>
+
+{% endblock %}

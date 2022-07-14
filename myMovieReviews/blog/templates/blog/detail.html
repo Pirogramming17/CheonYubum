@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %} {% block content %}
+<div class="detail">
+  <article>
+    <div><h2>{{ post.title }}</h2></div>
+    <div>
+      <div class="poster-img"></div>
+      <div class="detail-info">
+        <div class="comeout">개봉년도 {{post.comeout | date:'Y'}}</div>
+        <div>감독 {{post.direct}}</div>
+        <div>주연 {{post.maincha}}</div>
+        <div>장르 {{post.genre}}</div>
+        <div>평점 {{post.score}}/10</div>
+        <div>러닝타임 {{post.runnintime}}</div>
+      </div>
+      <div class="review">{{post.review}}</div>
+    </div>
+  </article>
+  <div>수정: <a href="/update/{{post.id}}">update</a></div>
+  <form action="/delete/{{post.id}}" method="post">
+    {% csrf_token %}
+    <button>delete</button>
+  </form>
+</div>
+{% endblock %}
