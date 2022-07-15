@@ -1,8 +1,8 @@
 {% extends 'blog/base.html' %} {% block content %}
 <form action="/update/{{post.id}}" method="post">
   {% csrf_token %}
-  <div>
-    <div class="create-title"></div>
+  <div class="new-post">
+    <div class="create-title"><span>Movie&nbsp;</span>review 🍿</div>
     <div class="create-menu">
       <div>
         <input
@@ -45,7 +45,7 @@
         />
       </div>
       <div>
-        <textarea name="review" id="" cols="30" rows="10">
+        <textarea name="review" id="" cols="56" rows="10" placeholder="REVIEW">
 {{post.review}}</textarea
         >
       </div>
@@ -66,9 +66,9 @@
         />
       </div>
     </div>
-  </div>
-  <div>
-    <input type="submit" value="SAVE" />
+    <div class="save-btn">
+      <input type="submit" value="SAVE" />
+    </div>
   </div>
 </form>
 

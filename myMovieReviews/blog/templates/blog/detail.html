@@ -1,24 +1,34 @@
 {% extends 'blog/base.html' %} {% block content %}
 <div class="detail">
-  <article>
+  <div class="title-container">
     <div><h2>{{ post.title }}</h2></div>
-    <div>
+    <div class="title-btn">
+      <div>
+        <a href="/update/{{post.id}}">update</a>
+      </div>
+      <div>
+        <form action="/delete/{{post.id}}" method="post">
+          {% csrf_token %}
+          <button>delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="detail-container">
       <div class="poster-img"></div>
       <div class="detail-info">
-        <div class="comeout">개봉년도 {{post.comeout | date:'Y'}}</div>
-        <div>감독 {{post.direct}}</div>
-        <div>주연 {{post.maincha}}</div>
-        <div>장르 {{post.genre}}</div>
-        <div>평점 {{post.score}}/10</div>
-        <div>러닝타임 {{post.runnintime}}</div>
+        <div>
+          <span class="vague">개봉년도</span> {{post.comeout | date:'Y'}}년
+        </div>
+        <div><span class="vague">감독</span> {{post.direct}}</div>
+        <div><span class="vague">주연</span> {{post.maincha}}</div>
+        <div><span class="vague">장르</span> {{post.genre}}</div>
+        <div><span class="vague">평점</span> {{post.score}}/10</div>
+        <div><span class="vague">러닝타임</span> {{post.runnintime}}</div>
       </div>
-      <div class="review">{{post.review}}</div>
     </div>
-  </article>
-  <div>수정: <a href="/update/{{post.id}}">update</a></div>
-  <form action="/delete/{{post.id}}" method="post">
-    {% csrf_token %}
-    <button>delete</button>
-  </form>
+    <div class="review">{{post.review}}</div>
+  </div>
 </div>
 {% endblock %}

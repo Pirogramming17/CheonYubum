@@ -96,7 +96,7 @@ main {
 
 .vague {
   text-decoration: none;
-  color: rgb(197 197 197);
+  color: rgb(143 143 143);
 }
 
 /*포스터 image 붙이는 거 추가해야함.*/
@@ -146,3 +146,58 @@ main {
 }
 
 /*detail.html*/
+.detail {
+  width: 1000px;
+  height: 600px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.title-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 1000px;
+  height: 230px;
+  background-color: rgb(242 242 242);
+  padding-left: 10px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.review {
+  width: 1000px;
+  height: 300px;
+  background-color: rgb(242 242 242);
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
